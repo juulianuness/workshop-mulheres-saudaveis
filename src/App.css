@@ -1,0 +1,11 @@
+/* App.css */
+
+/* Reset básico do React */
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Para componentes internos, podemos usar classes Tailwind ou o CSS do index.css */
