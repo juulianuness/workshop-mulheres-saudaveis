@@ -1,11 +1,11 @@
 import React from "react";
-import principalImg from './assets/img/principal.png';
+import principalImg from './assets/img/principal.svg'; // Mudando para .svg
 import LogoImg from './assets/img/logo-psi.svg';
 
 export default function Hero() {
   return (
     <section 
-      className="mt-3 position-relative overflow-hidden" 
+      className="mt-0 position-relative overflow-hidden" 
       style={{ minHeight: '100vh' }}
     >
       {/* Fundo gradiente sutil */}
@@ -85,76 +85,71 @@ export default function Hero() {
                 </button>
               </div>
 
-              <div className="bg-white shadow-lg p-4 rounded-4 mt-4">
-  <div className="row g-4 text-center">
+              {/* Informações do Evento - Layout Vertical */}
+              <div className="row g-4 mb-5 mt-5">
+                <div className="col-4">
+                  <div>
+                    <div
+                      style={{
+                        fontSize: '0.8rem',
+                        color: '#e91e63',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        marginBottom: '8px',
+                        fontWeight: '600'
+                      }}
+                    >
+                      Data
+                    </div>
+                    <div style={{ fontSize: '1rem', color: '#333', fontWeight: '600' }}>
+                      18 de Outubro
+                    </div>
+                  </div>
+                </div>
 
-    {/* Item */}
-    <div className="col-md-4 d-flex flex-column align-items-center">
-      <div style={{
-        background: 'linear-gradient(135deg, #F89FC0, #F9E3EB)',
-        color: '#fff',
-        borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '1.3rem',
-        marginBottom: '10px',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
-      }}>
-        📅
-      </div>
-      <h6 className="fw-bold mb-0">Data</h6>
-      <p className="mb-0" style={{ fontWeight: 500 }}>18 de Outubro</p>
-    </div>
+                <div className="col-4">
+                  <div>
+                    <div
+                      style={{
+                        fontSize: '0.8rem',
+                        color: '#e91e63',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        marginBottom: '8px',
+                        fontWeight: '600'
+                      }}
+                    >
+                      Horário
+                    </div>
+                    <div style={{ fontSize: '1rem', color: '#333', fontWeight: '600' }}>
+                      8:30 às 18h
+                    </div>
+                  </div>
+                </div>
 
-    {/* Item */}
-    <div className="col-md-4 d-flex flex-column align-items-center">
-      <div style={{
-        background: 'linear-gradient(135deg, #F89FC0, #F9E3EB)',
-        color: '#fff',
-        borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '1.3rem',
-        marginBottom: '10px',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
-      }}>
-        🕗
-      </div>
-      <h6 className="fw-bold mb-0">Horário</h6>
-      <p className="mb-0" style={{ fontWeight: 500 }}>8:30 às 18h</p>
-    </div>
-
-    {/* Item */}
-    <div className="col-md-4 d-flex flex-column align-items-center">
-      <div style={{
-        background: 'linear-gradient(135deg, #F89FC0, #F9E3EB)',
-        color: '#fff',
-        borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontSize: '1.3rem',
-        marginBottom: '10px',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.15)'
-      }}>
-        📍
-      </div>
-      <h6 className="fw-bold mb-0">Local</h6>
-      <p className="mb-0" style={{ fontWeight: 500, textAlign: 'center' }}>Espaço Blue House</p>
-      <small style={{ color: '#777' }}>Santa Cruz - RJ</small>
-    </div>
-
-  </div>
-</div>
-
+                <div className="col-4">
+                  <div>
+                    <div
+                      style={{
+                        fontSize: '0.8rem',
+                        color: '#e91e63',
+                        textTransform: 'uppercase',
+                        letterSpacing: '1px',
+                        marginBottom: '8px',
+                        fontWeight: '600'
+                      }}
+                    >
+                      Local
+                    </div>
+                    <div style={{ fontSize: '1rem', color: '#333', fontWeight: '600' }}>
+                      Espaço Blue House
+                    </div>
+                    <div style={{ fontSize: '0.85rem', color: '#666' }}>
+                      Santa Cruz - RJ
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -162,7 +157,7 @@ export default function Hero() {
           <div className="col-lg-7 col-md-6">
             <div className="position-relative">
               {/* Logo acima da imagem */}
-              <div className="text-center mb-3">
+              <div className="text-center mb-3 mt-2">
                 <img
                   src={LogoImg}
                   alt="Logo Jaqueline Vieira"
@@ -171,14 +166,15 @@ export default function Hero() {
                     objectFit: 'contain',
                     opacity: '0.9',
                     transition: 'opacity 0.3s ease',
+                    backgroundColor: 'transparent' // Força transparência
                   }}
                   onMouseEnter={(e) => e.target.style.opacity = '1'}
                   onMouseLeave={(e) => e.target.style.opacity = '0.9'}
                 />
               </div>
 
-              {/* Imagem maior */}
-              <div className="text-center mb-5">
+              {/* Imagem SVG sem fundo */}
+              <div className="text-center mb-4">
                 <img
                   src={principalImg}
                   alt="Mulher Saudável"
@@ -190,7 +186,9 @@ export default function Hero() {
                     borderRadius: '20px',
                     boxShadow: '0 20px 60px rgba(0,0,0,0.08)',
                     transition: 'transform 0.3s ease',
-                    objectFit: 'cover'
+                    objectFit: 'contain', // Mudei para contain para SVGs
+                    backgroundColor: 'transparent', // Remove qualquer fundo
+                    border: 'none' // Remove bordas que possam criar fundo
                   }}
                   onMouseEnter={(e) => {
                     e.target.style.transform = 'scale(1.02)';
