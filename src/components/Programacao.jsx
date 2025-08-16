@@ -7,7 +7,7 @@ export default function Programacao() {
     { hora: "9:30", evento: "Abertura", descritivo: "", respons: "Psi Jaqueline Vieira" },
     { hora: "10:00", evento: "Palestra", descritivo: "Ginecologista", respons: "Dr Marta Luchesi" },
     { hora: "11:30", evento: "Almoço", descritivo: "", respons: "" },
-    { hora: "13:00", evento: "Palestra", descritivo: "Educadora Física", respons: "Bianca Motta" },
+    { hora: "13:00", evento: "Palestra", descritivo: "Profissional de Educação Física", respons: "Bianca Motta" },
     { hora: "13:45", evento: "Palestra", descritivo: "Fisioterapeuta", respons: "Rosimar Caetano" },
     { hora: "15:00", evento: "Coffee Break", descritivo: "", respons: "" },
     { hora: "15:30", evento: "Palestra", descritivo: "Nutricionista", respons: "Luciana Garcia" },

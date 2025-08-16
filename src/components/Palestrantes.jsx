@@ -16,7 +16,7 @@ export default function Palestrantes() {
         },
         {
             nome: "Bianca Motta",
-            cargo: "Educadora Física",
+            cargo: "Profissional de Educação Física",
             especialidade: "Atividade Física e Bem-estar",
             foto:biancaImg,
         },
@@ -29,7 +29,7 @@ export default function Palestrantes() {
         {
             nome: "Rosimar Caetano",
             cargo: "Fisioterapeuta",
-            especialidade: "Fisioterapia Preventiva",
+            especialidade: "Fisioterapia Pélvica",
             foto: rosimarImg,
         },
         {
