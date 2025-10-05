@@ -3,9 +3,9 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 export default function Lotes() {
   const lots = [
-    { tipo: "1° Lote", preco: "R$ 99,00", ate: "22/09", link: "https://pay.kiwify.com.br/Esvjo0D" },
-    { tipo: "2° Lote", preco: "R$ 114,99", ate: "04/10", link: "https://pay.kiwify.com.br/kzXPqay" },
-    { tipo: "3° Lote", preco: "R$ 135,00", ate: "11/10", link: "https://pay.kiwify.com.br/jadZvcz" },
+    { tipo: "1° Lote", preco: "R$ --", ate: "22/09", link: "https://pay.kiwify.com.br/Esvjo0D" },
+    { tipo: "2° Lote", preco: "R$ 47,00", ate: "04/10", link: "https://pay.kiwify.com.br/kzXPqay" },
+    { tipo: "3° Lote", preco: "R$ 57,00", ate: "11/10", link: "https://pay.kiwify.com.br/jadZvcz" },
   ];
 
   return (
